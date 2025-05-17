@@ -32,7 +32,7 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.1",
-    "@langchain/core": "^0.3.55",
+    "@langchain/core": "^0.3.56",
     "@langchain/google-genai": "^0.2.9",
     "@langchain/openai": "^0.5.10",
     "@octokit/rest": "^21.1.1",
