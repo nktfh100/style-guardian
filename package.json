@@ -1,0 +1,54 @@
+{
+  "name": "style-guardian",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "homepage": "https://github.com/nktfh100/style-guardian",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nktfh100/style-guardian.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nktfh100/style-guardian/issues"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "package": "ncc build src/index.ts -o dist -m",
+    "lint": "eslint --report-unused-disable-directives --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,json}\""
+  },
+  "lint-staged": {
+    "*.{ts,json,md}": "prettier --write",
+    "*.ts": "eslint --fix"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1",
+    "@langchain/core": "^0.3.55",
+    "@langchain/google-genai": "^0.2.9",
+    "@langchain/openai": "^0.5.10",
+    "@octokit/rest": "^21.1.1",
+    "parse-diff": "^0.11.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^22.15.18",
+    "@vercel/ncc": "^0.38.3",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  }
+}

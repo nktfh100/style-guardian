@@ -1,0 +1,7 @@
+echo 'Running CI'
+npx lint-staged
+npm run typecheck
+
+echo 'Packaging and adding to git'
+npm run package
+git add dist/

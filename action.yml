@@ -1,0 +1,11 @@
+name: Style Guardian
+description: Enforce style guide using AI in your repository.
+author: Malachi Turjeman
+
+runs:
+  using: node20
+  main: dist/index.js
+
+branding:
+  icon: "terminal"
+  color: "blue"
