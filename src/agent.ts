@@ -14,7 +14,6 @@ export const suggestionSchema = z.object({
   violation: z.string(),
   original_code: z.string(),
   suggested_fix: z.string(),
-  confidence: z.number(),
 });
 
 export type Suggestion = z.infer<typeof suggestionSchema>;

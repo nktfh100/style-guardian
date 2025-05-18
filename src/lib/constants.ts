@@ -17,7 +17,6 @@ PR Analysis Guidelines:
 Response Guidelines:
 - Provide the correct line number for the violation (each line in the diff is prefixed with the line number)
 - Rule should be in the format: "rule category > sub rule"
-- Confidence level should be between 0 and 10
 
 You must always return valid JSON fenced by a markdown code block. Do not return any additional text.
 `;
